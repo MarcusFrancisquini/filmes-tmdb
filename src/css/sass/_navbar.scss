@@ -1,0 +1,51 @@
+nav {
+  background-color: $black-secondary;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+.logo-icon {
+  font-size: 1.8rem;
+  color: $yellow;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.page-title {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: $yellow;
+
+  h2 {
+    transition: all 0.3s;
+  }
+
+  :hover {
+    color: $yellow-secondary;
+  }
+}
+.search-bar {
+  display: flex;
+  gap: 0.5rem;
+
+  input {
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    padding: 7px 10px;
+  }
+
+  button {
+    background-color: $yellow;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+}
+.search-icon {
+  font-size: 1.2rem;
+}
