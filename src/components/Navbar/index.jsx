@@ -6,12 +6,11 @@ function Navbar() {
   return (
     <>
       <nav>
-        <div className="logo">
+        <Link to="/" className="logo">
           <BsFilm className="logo-icon" />
-          <Link to="/" className="page-title">
-            <h2>tmdb</h2>
-          </Link>
-        </div>
+          <h2>tmdb</h2>
+        </Link>
+
         <div className="search-bar">
           <input type="text" placeholder="Find a film" />
           <button type="submit">

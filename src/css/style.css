@@ -38,18 +38,14 @@ nav {
   display: flex;
   align-items: center;
   gap: 1rem;
-}
-
-.page-title {
   text-transform: uppercase;
   letter-spacing: 4px;
   color: #f7d354;
 }
-.page-title h2 {
-  transition: all 0.3s;
-}
-.page-title :hover {
+.logo:hover h2,
+.logo:hover .logo-icon {
   color: #b8930c;
+  transition: all 0.3s ease;
 }
 
 .search-bar {
@@ -73,4 +69,65 @@ nav {
 
 .search-icon {
   font-size: 1.2rem;
+}
+
+.title-home {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.title-home h1 {
+  border-bottom: 2px solid #f7d354;
+  display: inline-block;
+}
+
+.img-card {
+  width: 100%;
+}
+
+.card {
+  width: 15rem;
+  background-color: #121212;
+  padding: 15px;
+}
+
+.titulo-filme {
+  padding-top: 10px;
+}
+
+.nota {
+  padding: 15px 0;
+  display: flex;
+  gap: 5px;
+}
+.nota .star-icon {
+  color: #f7d354;
+  width: 14px;
+}
+.nota p {
+  font-size: 14px;
+}
+
+.btn-container {
+  height: 40px;
+}
+.btn-container .btn-detalhes {
+  color: black;
+  background-color: #f7d354;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  font-size: 15px;
+  transition: all 0.3s;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
 }/*# sourceMappingURL=style.css.map */

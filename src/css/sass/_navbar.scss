@@ -12,20 +12,19 @@ nav {
   display: flex;
   align-items: center;
   gap: 1rem;
-}
-.page-title {
   text-transform: uppercase;
   letter-spacing: 4px;
   color: $yellow;
 
-  h2 {
-    transition: all 0.3s;
-  }
-
-  :hover {
-    color: $yellow-secondary;
+  &:hover {
+    h2,
+    .logo-icon {
+      color: $yellow-secondary;
+      transition: all 0.3s ease;
+    }
   }
 }
+
 .search-bar {
   display: flex;
   gap: 0.5rem;
