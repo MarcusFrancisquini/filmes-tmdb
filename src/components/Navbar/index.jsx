@@ -12,7 +12,7 @@ function Navbar() {
         </Link>
 
         <div className="search-bar">
-          <input type="text" placeholder="Find a film" />
+          <input type="text" placeholder="Busque um filme" />
           <button type="submit">
             <BiSearchAlt2 className="search-icon" />
           </button>
