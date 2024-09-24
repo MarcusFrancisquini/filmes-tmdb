@@ -6,11 +6,18 @@ function MovieCard({ movie, mostrarDetalhes = true }) {
   return (
     <>
       <div className="card">
-        <img
-          className="img-card"
-          src={imageURL + movie.poster_path}
-          alt={movie.title}
-        />
+        {movie.poster_path ? (
+          <img
+            className="img-card"
+            src={imageURL + movie.poster_path}
+            alt={movie.title}
+            onError={(e) => {
+              e.target.onerror = null;
+            }}
+          />
+        ) : (
+          <p className="img-erro">Imagem não disponível</p>
+        )}
         <div className="card-content">
           <h4 className="titulo-filme">{movie.title}</h4>
           <div className="nota">

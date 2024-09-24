@@ -1,5 +1,4 @@
 import MovieCard from "../../components/MovieCard";
-import Navbar from "../../components/Navbar";
 import { useState, useEffect } from "react";
 import axios from "axios";
 
@@ -29,7 +28,6 @@ function Home() {
 
   return (
     <>
-      <Navbar></Navbar>
       <div className="title-home">
         <h1>Melhores Filmes</h1>
       </div>

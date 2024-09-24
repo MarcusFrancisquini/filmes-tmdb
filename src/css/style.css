@@ -150,4 +150,17 @@ nav {
   flex-direction: column;
   justify-content: space-between;
   flex-grow: 1;
+}
+
+.img-erro {
+  color: #b8930c;
+}
+
+.title-search {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.title-search .query-text {
+  color: #f7d354;
 }/*# sourceMappingURL=style.css.map */
