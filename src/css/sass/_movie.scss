@@ -1,0 +1,45 @@
+.info-icon {
+  color: $yellow;
+  font-size: 20px;
+}
+.info h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+}
+.info p {
+  padding-top: 10px;
+}
+.info {
+  padding-top: 20px;
+}
+.img-filme {
+  width: 20rem;
+}
+.filme-detalhes {
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+.basic-infos {
+  text-align: center;
+}
+.nota-filme {
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  .star-icon {
+    color: $yellow;
+    width: 14px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+.info-filme-container {
+  max-width: 30rem;
+}

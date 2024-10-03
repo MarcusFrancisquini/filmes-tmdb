@@ -2,7 +2,7 @@ import { FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 const imageURL = "https://image.tmdb.org/t/p/original/";
 
-function MovieCard({ movie, mostrarDetalhes = true }) {
+function MovieCard({ movie }) {
   return (
     <>
       <div className="card">
@@ -11,9 +11,6 @@ function MovieCard({ movie, mostrarDetalhes = true }) {
             className="img-card"
             src={imageURL + movie.poster_path}
             alt={movie.title}
-            onError={(e) => {
-              e.target.onerror = null;
-            }}
           />
         ) : (
           <p className="img-erro">Imagem não disponível</p>
@@ -25,11 +22,9 @@ function MovieCard({ movie, mostrarDetalhes = true }) {
             <p>{movie.vote_average.toFixed(1)}</p>
           </div>
           <div className="btn-container">
-            {mostrarDetalhes && (
-              <Link className="btn-detalhes" to={`/movie/${movie.id}`}>
-                Detalhes
-              </Link>
-            )}
+            <Link className="btn-detalhes" to={`/movie/${movie.id}`}>
+              Detalhes
+            </Link>
           </div>
         </div>
       </div>

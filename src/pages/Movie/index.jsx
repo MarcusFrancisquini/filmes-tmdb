@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
-import { BsGraphUpArrow, BsWallet2, BsHourglassSplit } from "react-icons/bs";
+import MovieDetail from "../../components/MovieDetail";
 
 const movieURL = "https://api.themoviedb.org/3/movie/";
 const apiKey = "298a307fe19336b6a3dbbd8843b20430";
@@ -32,8 +32,7 @@ function Movie() {
     getMovie();
   }, []);
 
-  return <>{movie ? <h2>{movie.title}</h2> : <p>Carregando...</p>}</>;
-  //TODO terminar de montar a tela
+  return <>{movie ? <MovieDetail movie={movie} /> : <p>Carregando...</p>}</>;
 }
 
 export default Movie;
